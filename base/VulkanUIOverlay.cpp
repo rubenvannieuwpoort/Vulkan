@@ -72,7 +72,7 @@ namespace vks
 			delete[] fontAsset;
 		}
 #else
-		io.Fonts->AddFontFromFileTTF("./../data/Roboto-Medium.ttf", 16.0f);
+		io.Fonts->AddFontFromFileTTF("../../data/Roboto-Medium.ttf", 16.0f);
 #endif		
 		io.Fonts->GetTexDataAsRGBA32(&fontData, &texWidth, &texHeight);
 		VkDeviceSize uploadSize = texWidth*texHeight * 4 * sizeof(char);
